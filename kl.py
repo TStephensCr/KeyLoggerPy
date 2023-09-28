@@ -1,4 +1,4 @@
-import pyinput
+import pynput
 from time import ctime
 from pynput.keyboard import Key, Listener
 
